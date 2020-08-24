@@ -19,10 +19,10 @@ public class AppConfig {
         TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
 
         // cannot override encoding in Spring at runtime as some strings have already been read
-        Assert.isTrue("UTF-8".equals(System.getProperty("file.encoding")), "File encoding is not UTF-8");
+//        Assert.isTrue("UTF-8".equals(System.getProperty("file.encoding")), "File encoding is not UTF-8");
 
-        Charset charset = Charset.defaultCharset();
-        Assert.isTrue(charset.equals(StandardCharsets.UTF_8), "Default charset is not UTF-8");
+//        Charset charset = Charset.defaultCharset();
+//        Assert.isTrue(charset.equals(StandardCharsets.UTF_8), "Default charset is not UTF-8");
     }
 
     @Bean

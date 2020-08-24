@@ -21,9 +21,9 @@ import java.lang.annotation.Target;
 @Getter
 @Setter
 public class SwaggerPageable {
-    @ApiModelProperty("Results page you want to retrieve (0..N)")
+    @ApiModelProperty(value = "Results page you want to retrieve (0..N)", example = "0")
     private Integer page;
-    @ApiModelProperty("Number of records per page.")
+    @ApiModelProperty(value = "Number of records per page.", example = "20")
     private Integer size;
     @ApiModelProperty("Sorting criteria in the format: property(,asc|desc). Default sort order is ascending. Multiple sort criteria are supported.")
     private String sort;
